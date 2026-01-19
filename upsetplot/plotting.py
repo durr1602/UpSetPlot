@@ -931,8 +931,8 @@ class UpSet:
             for rect in rects:
                 height = rect.get_height() + rect.get_y()
                 ax.text(
-                    float(np.ravel(height + margin)[0]),
                     float(np.ravel(rect.get_x() + rect.get_width() * 0.5)[0]),
+                    float(np.ravel(height + margin)[0]),
                     fmt.format(*make_args(height)),
                     ha="center",
                     va="bottom",
